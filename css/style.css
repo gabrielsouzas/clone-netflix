@@ -12,6 +12,7 @@
 
 body {
     background: black;
+    overflow: hidden;
 }
 
 .center {
@@ -170,4 +171,32 @@ section.destaque {
 
 .texto-destaque i {
     padding-right: 8px;
+}
+
+section.videos {
+    max-height: 180px;
+    position: absolute;
+    top: 680px;
+    z-index: 4;
+    left: 60px;
+    
+}
+
+.videos .novos {
+    display: inline-block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    max-width: 1350px;
+
+}
+
+.novos img {
+    cursor: pointer;
+}
+
+.novos img:hover {
+    top: -4px;
+    box-shadow: 0 4px 4px #999;
+    transition: all .2s ease-in-out
 }
